@@ -30,7 +30,6 @@ fynd-task-2/
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+
 - Java 21+
 - MySQL database
 - Groq API key
