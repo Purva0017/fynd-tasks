@@ -1,0 +1,167 @@
+#HELP.md
+#target/
+#.mvn/wrapper/maven-wrapper.jar
+#!**/src/main/**/target/
+#!**/src/test/**/target/
+#
+#### STS ###
+#.apt_generated
+#.classpath
+#.factorypath
+#.project
+#.settings
+#.springBeans
+#.sts4-cache
+#
+#### IntelliJ IDEA ###
+#.idea
+#*.iws
+#*.iml
+#*.ipr
+#
+#### NetBeans ###
+#/nbproject/private/
+#/nbbuild/
+#/dist/
+#/nbdist/
+#/.nb-gradle/
+#build/
+#!**/src/main/**/build/
+#!**/src/test/**/build/
+#
+#### VS Code ###
+#.vscode/
+
+
+#here’s a clean, production-safe .gitignore for a Spring Boot repo that also accounts for Docker + .env + logs + common local files.
+#
+#You can use this as-is (it’s safe + widely used):
+############################
+# Spring Boot / Java / Maven
+############################
+
+HELP.md
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrapper jar (generated)
+.mvn/wrapper/maven-wrapper.jar
+
+# Keep build folders under src (rare but ok)
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+############################
+# Gradle (if ever used)
+############################
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+############################
+# IDEs
+############################
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+############################
+# OS / junk files
+############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+############################
+# Logs
+############################
+*.log
+logs/
+
+############################
+# Environment / Secrets
+############################
+
+# Never commit secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Common secret files
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+secrets/
+**/secrets/
+
+############################
+# Spring local config overrides
+############################
+application-local.properties
+application-local.yml
+application-dev-local.yml
+application-dev-local.properties
+
+############################
+# Docker / containers
+############################
+docker-compose.override.yml
+*.local.yml
+*.local.yaml
+
+############################
+# Databases / runtime data
+############################
+*.db
+*.sqlite
+*.sqlite3
+data/
+tmp/
+storage/
+
+############################
+# Test / coverage / reports
+############################
+coverage/
+*.exec
+*.hprof
+reports/
+test-output/
+
+############################
+# Misc
+############################
+*.swp
+*.swo
+*~

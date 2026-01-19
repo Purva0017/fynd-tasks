@@ -1,0 +1,4 @@
+Approach,Accuracy (%),JSON Validity (%),Consistency (%)
+Prompt V1 (Strict JSON + Short Rubric),56.5,100,100
+Prompt V2 (Detailed Rubric + Locked Rules),63,100,100
+Prompt V3 (Few-shot + Rubric + Strict JSON),58,100,100
