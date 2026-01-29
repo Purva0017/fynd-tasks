@@ -6,6 +6,7 @@ import { ToastContainer } from './components/ui/Toast';
 import { UserDashboard } from './pages/UserDashboard';
 import { AdminDashboard } from './pages/AdminDashboard';
 import { AdminLogin } from './pages/AdminLogin';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -36,6 +37,7 @@ function App() {
             </Routes>
           </BrowserRouter>
           <ToastContainer />
+          <SpeedInsights />
         </ToastProvider>
       </ThemeProvider>
     </QueryClientProvider>
